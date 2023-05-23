@@ -43,21 +43,21 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  Normal = 'fg bg' # Normal text and background color
  SignColumn = 'fg bg'
 
- VertSplit = 'gray bg' # split border
+ VertSplit = '- bg' # Split border
  
- NormalFloat = 'fg float'
- ColorColumn = '- active'
- Conceal = 'disabled'
- Cursor = 'cursor - r'
- CursorIM = 'cursor - r'
- lCursor = 'cursor - r'
+ NormalFloat = 'fg float' # Normal text and background color
+ ColorColumn = '- active' # Used for the columns set with 'ColorColumn'
+ Conceal = 'disabled' # Placeholder characters substituted for concealed text (see 'conceallevel')
+ Cursor = 'cursor - r' # The character under the cursor
+ CursorIM = 'cursor - r' # Like Cursor, but used when in IME mode
+ lCursor = 'cursor - r' 
  TermCursor = 'cursor - r'
  TermCursorNC = 'cursor - r'
- Directory = 'blue'
- DiffAdd = 'green - r'
- DiffChange = 'orange - r'
- DiffDelete = 'red - r'
- DiffText = 'yellow - r'
+ Directory = 'blue -' # Directory names (and other special names listings)
+ DiffAdd = 'green - r' # diff mode: Added line
+ DiffChange = 'orange - r' # diff mode: Changed line
+ DiffDelete = 'red - r' # diff mode: Deleted line
+ DiffText = 'yellow - r' # diff mode: Changed text within a changed line
  EndOfBuffer = 'disabled'
  ErrorMsg = '-'
  Folded = 'disabled - i'
@@ -133,15 +133,15 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  Error = 'error - bu' # Any erroneous construct
  Todo = 'yellow - bi' # anything that needs extra attention; mostly the keywords TODO FIXME and XXX
  
- Comment = 'gray - i'
+ Comment = 'comments - i'
 
- Conditional = 'blue'
- Keyword = 'blue'
- Repeat = 'purple'
+ Conditional = 'purple - i'
+ Keyword = 'purple - i'
+ Repeat = 'purple - i'
 
- Function = 'yellow'
+ Function = 'blue - i'
 
- Identifier = 'cyan'
+ Identifier = 'gray - i'
 
  NormalNC = 'fg bg'
  FloatBorder = 'gray bg_alt'
@@ -235,12 +235,12 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  markdownCode = 'orange'
  markdownCodeBlock = 'orange'
  markdownCodeDelimiter = 'orange'
- markdownH1 = 'blue'
- markdownH2 = 'blue'
- markdownH3 = 'blue'
- markdownH4 = 'blue'
- markdownH5 = 'blue'
- markdownH6 = 'blue'
+ markdownH1 = 'cyan - b'
+ markdownH2 = 'red - b'
+ markdownH3 = 'green - b'
+ markdownH4 = 'cyan'
+ markdownH5 = 'red'
+ markdownH6 = 'green'
  markdownHeadingDelimiter = 'blue'
  markdownHeadingRule = 'fg - b'
  markdownId = 'purple'
