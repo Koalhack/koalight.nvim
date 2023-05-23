@@ -1,0 +1,458 @@
+[information]
+name = "koalight"
+background = "dark"
+author = "Alexandre Saner <alexandre.saner@gmail.com>"
+
+[palette]
+	white =         '#EEFFFF'
+	gray =          '#a1abe0'
+	black =         '#000000'
+	red =           '#ff757f'
+	green =         '#2df4c0'
+	yellow =        '#ffc777'
+	paleblue =      '#d6e7f0'
+	cyan =          '#b994f1'
+	blue =          '#04d1f9'
+	purple =        '#b4a4f4'
+	orange =        '#f67f81'
+	pink =          '#ecb2f0'
+
+	bg =            '#212337'
+	bg_alt =        '#1B1E2B'
+	fg =            '#e4f3fa'
+	text =          '#757dac'
+	comments =      '#7486d6'
+	selection =     '#403c64'
+	contrast =      '#1b1c2b'
+	active =        '#414863'
+	border =        '#414863'
+	line_numbers =  '#596399'
+	highlight =     '#a1abe0'
+	disabled =      '#515772'
+	cursor =        '#5cb4fc'
+	accent =        '#a3ace1'
+
+	error =         '#FF5370'
+	link =          '#80CBC4'
+
+	none =          'NONE'
+  float =         'link:bg_alt'
+
+
+[highlights]
+ Normal = 'fg bg' # Normal text and background color
+ SignColumn = 'fg bg'
+
+ VertSplit = 'gray bg' # split border
+ 
+ NormalFloat = 'fg float'
+ ColorColumn = '- active'
+ Conceal = 'disabled'
+ Cursor = 'cursor - r'
+ CursorIM = 'cursor - r'
+ lCursor = 'cursor - r'
+ TermCursor = 'cursor - r'
+ TermCursorNC = 'cursor - r'
+ Directory = 'blue'
+ DiffAdd = 'green - r'
+ DiffChange = 'orange - r'
+ DiffDelete = 'red - r'
+ DiffText = 'yellow - r'
+ EndOfBuffer = 'disabled'
+ ErrorMsg = '-'
+ Folded = 'disabled - i'
+ FoldColumn = 'blue'
+ IncSearch = 'highlight white r'
+ LineNr = 'line_numbers'
+ CursorLineNr = 'accent'
+ MatchParen = 'yellow - b'
+ ModeMsg = 'accent'
+ MoreMsg = 'accent'
+ MsgSeparator = 'fg bg'
+ MsgArea = 'link:Normal'
+ NonText = 'disabled'
+ Pmenu = 'text contrast'
+ PmenuSel = 'accent active'
+ PmenuSbar = 'text contrast'
+ PmenuThumb = 'fg accent'
+ Question = 'green'
+ QuickFixLine = 'highlight white r'
+ qfLineNr = 'highlight white r'
+ Search = 'highlight white r'
+ SpecialKey = 'purple'
+ SpellBad = 'red - ic'
+ SpellCap = 'blue - ic'
+ SpellLocal = 'cyan - ic'
+ SpellRare = 'purple - ic'
+ TabLineFill = 'fg'
+ TabLineSel = 'bg accent'
+ TabLine = 'fg'
+ Title = 'green - b'
+ Visual = '- selection'
+ VisualNOS = '- selection'
+ WarningMsg = 'yellow'
+ WildMenu = 'orange - b'
+ CursorColumn = '- active'
+ CursorLine = '- -'
+ ToolbarLine = 'fg bg_alt'
+ ToolbarButton = 'fg - b'
+ NormalMode = 'accent - r'
+ InsertMode = 'green - r'
+ ReplaceMode = 'red - r'
+ VisualMode = 'purple - r'
+ CommandMode = 'gray - r'
+ Warnings = 'yellow'
+
+ Type = 'purple' # int, long, char, etc.
+ StorageClass = 'cyan' # static, register, volatile, etc.
+ Structure = 'purple' # struct, union, enum, etc.
+ Constant = 'yellow' # any constant
+ String = 'green - i' # Any string
+ Character = 'orange' # any character constant: 'c', 'n'  
+ Number = 'orange' # a number constant
+ Boolean = 'orange' # a boolean constant: TRUE, false
+ Float = 'orange' # a floating point constant: 2.3e10
+ Statement = 'pink' # any statement
+ Label = 'purple' # case, default, etc.
+ Operator = 'cyan' # sizeof, "+", "*", etc.
+ Exception = 'cyan' # try, catch, throw
+ PreProc = 'purple' # generic Preprocessor
+ Include = 'blue' # Preprocessor #include
+ Define = 'pink' # Preprocessor #define
+ Macro = 'cyan' # Same as Define
+ Typedef = 'red' # A typedef
+ PreCondit = 'cyan' # Preprocessor #if, #else, #endif, etc.
+ Special = 'red' # Any special symbol
+ SpecialChar = 'pink' # Special character in a constant
+ Tag = 'red' # You can use CTRL-] on this
+ Delimiter = 'cyan -' # Character that needs attention like, or.
+ SpecialComment = 'gray' # Special things inside comment
+ Debug = 'red' # Degugging statements
+ Underlined = 'link - u' # Text that stands out, HTML links
+ Ignore = 'disabled' # Left blank, hidden
+ Error = 'error - bu' # Any erroneous construct
+ Todo = 'yellow - bi' # anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+ 
+ Comment = 'gray - i'
+
+ Conditional = 'blue'
+ Keyword = 'blue'
+ Repeat = 'purple'
+
+ Function = 'yellow'
+
+ Identifier = 'cyan'
+
+ NormalNC = 'fg bg'
+ FloatBorder = 'gray bg_alt'
+ Whitespace = 'bg -'
+ MatchWord = '- - u'
+ MatchWordCur = '- - u'
+ MatchParenCur = '- - u'
+ Substitute = 'gray orange'
+ Variable = 'cyan'
+ Bold = '- - b'
+ Italic = '- - i'
+
+ #healthError = ''
+ #healthSuccess = ''
+ #healthWarning = ''
+
+[Treesitter]
+ TSAnnotation = 'red' # For C++/Dart attributes, annotations, that can be attached to denote some kind of meta information
+ TSAttribute = 'yellow' # (unstable) TODO: docs
+ TSBoolean = 'orange' # For booleans.
+ TSCharacter = 'orange' # For characters.
+ TSConstructor = 'purple' # For constructor calls and definition: `= { }` in Lua, and Java constructors.
+ TSConstant = 'yellow' # For constants
+ TSConstBuiltin = 'blue' # For constant that are built in language: `nil` in Lua.
+ TSConstMacro = 'blue' # For constants that are defined by macros: `NULL` in C.
+ TSError = 'error' # For syntax/parser errors.
+ TSException = 'yellow' # For exception related keywords.
+ TSField = 'gray' # For fields
+ TSFloat = 'red' # For floats
+ TSFuncMacro = 'blue' # For macro defined functions (calls and definitions): each `macro_rules` in Rust.
+ TSInclude = 'cyan' # For includes: `#include` in C `use` or `extern crate` in Rust, or `require` in Lua.
+ TSLabel = 'red' # For labels: `label:` in C and `:label:` in Lua.
+ TSNamespace = 'yellow' # For identifiers referring to modules and namespace.
+ TSNumber = 'orange' # For all numbers
+ TSOperator = 'cyan' # For any operator: `+` but also `->` and `*` in C.
+ TSParameter = 'paleblue' # For parameter of a function.
+ TSParameterReference = 'paleblue' # For references to parameters of a function.
+ TSProperty = 'paleblue' # Same as `TSField`
+ TSPunctDelimiter = 'cyan -' # For delimiters ie: `.`
+ TSPunctBracket = 'cyan -' # For brackets and parens.
+ TSPunctSpecial = 'cyan' # For special punctutation that does not fall in the categories before.
+ TSString = 'green' # For strings.
+ TSStringRegex = 'blue' # For regexes.
+ TSStringEscape = 'disabled' # For escape characters within a string.
+ TSSymbol = 'yellow' # For identifiers referring to symbols or atoms.
+ TSType = 'purple' # For types.
+ TSTypeBuiltin = 'purple' # For builtin types.
+ TSTag = 'red' # Tags like html tag names.
+ TSTagDelimiter = 'yellow' # Tag delimiter like `<` `>` `/`
+ TSText = 'text' # For strings considered text in a markup language.
+ TSTextReference = 'yellow' # FIXME
+ TSEmphasis = 'paleblue' # For text to be represented with emphasis.
+ TSUnderline = 'fg - u' # For text to be represented with an underline.
+ TSStrike = '-' # For strikethrough text.
+ TSTitle = 'paleblue - b' # Text that is part of a title.
+ TSLiteral = 'fg' # Literal text.
+ TSURI = 'link' # Any URI like a link or email.
+ 
+ TSComment = 'comments - i' # For comment blocks
+
+ TSConditional = 'purple - i' # For keywords related to conditionals.
+ TSKeyword = 'purple - i' # For keywords that don't fall in previous categories.
+ TSRepeat = 'purple - i' # For keywords related to loops.
+ TSKeywordFunction = 'purple - i' # For keywords used to define a function.
+ TSKeywordOperator = 'purple - i' # For keywords related to operator.
+ TSKeywordReturn = 'purple - i' # For keywords used to return a value of a function
+ 
+ TSFunction = 'blue - i' # For function (calls and definitions).
+ TSMethod = 'blue - i' # For method calls and definitions.
+ TSFuncBuiltin = 'cyan - i' # For builtin functions: `table.insert` in Lua.
+ 
+ TSVariable = 'gray - i' # Any variable name that does have another highlight.
+ TSVariableBuiltin = 'gray - i' # Variable names that are defined by the languages, likes `this` or `self`.
+
+ TSTagAttribute = 'orange'
+ TSStructure = 'paleblue'
+ TSStrong = 'blue - b'
+ TSQueryLinterError = 'yellow'
+ TreesitterContext = '- gray'
+
+[html]
+ htmlLink = 'link - u' 
+ htmlH1 = 'cyan - b'
+ htmlH2 = 'red - b'
+ htmlH3 = 'green - b'
+ htmlH4 = 'yellow - b'
+ htmlH5 = 'purple - b'
+
+[markdown]
+ markdownBlockquote = 'green'
+ markdownCode = 'orange'
+ markdownCodeBlock = 'orange'
+ markdownCodeDelimiter = 'orange'
+ markdownH1 = 'blue'
+ markdownH2 = 'blue'
+ markdownH3 = 'blue'
+ markdownH4 = 'blue'
+ markdownH5 = 'blue'
+ markdownH6 = 'blue'
+ markdownHeadingDelimiter = 'blue'
+ markdownHeadingRule = 'fg - b'
+ markdownId = 'purple'
+ markdownIdDeclaration = 'blue'
+ markdownIdDelimiter = 'gray'
+ markdownLinkDelimiter = 'gray'
+ markdownBold = 'blue - b'
+ markdownItalic = '- - i'
+ markdownBoldItalic = 'yellow - bi'
+ markdownListMarker = 'blue'
+ markdownOrderedListMarker = 'blue'
+ markdownRule = 'accent'
+ markdownUrl = 'cyan - u'
+ markdownLinkText = 'blue'
+ markdownFootnote = 'orange'
+ markdownFootnoteDefinition = 'orange'
+ markdownEscape = 'yellow'
+
+[LSP]
+ LspDiagnosticsError = 'error'
+ LspDiagnosticsDefaultError = 'error' # Used for "Error" diagnostic virtual text
+ LspDiagnosticsSignError = 'error' # Used for "Error" diagnostic signs in sign column
+ LspDiagnosticsFloatingError = 'error' # Used for "Error" diagnostic messages in the diagnostic float
+ LspDiagnosticsVirtualTextError = 'error' # Virtual text "Error"
+ LspDiagnosticsUnderlineError = '- - c error' # Used to underline "Error" diagnostic
+ DiagnosticError = 'error'
+ DiagnosticSignError = 'error'
+ DiagnosticUnderlineError = 'error'
+ DiagnosticFloatingError = 'error'
+ DiagnosticVirtualTextError = 'error'
+
+ LspDiagnosticsWarning = 'yellow'
+ LspDiagnosticsDefaultWarning = 'yellow' # Used for "Warning" diagnostic virtual text
+ LspDiagnosticsSignWarning = 'yellow' # Used for "Warning" diagnostic signs in sign column 
+ LspDiagnosticsFloatingWarning = 'yellow' # Used for "Warning" diagnostic messages in the diagnostic float
+ LspDiagnosticsVirtualTextWarning = 'yellow' # Virtual text "Warning"
+ LspDiagnosticsUnderlineWarning = '- - c yellow' # Used to underline "Warning" diagnostic
+ DiagnosticSignWarning = 'yellow'
+ DiagnosticUnderlineWarn = 'yellow'
+ DiagnosticVirtualTextWarn = 'yellow'
+ DiagnosticFloatingWarn = 'yellow'
+
+ LspDiagnosticsInformation = 'paleblue'
+ LspDiagnosticsDefaultInformation = 'paleblue' # Used for "information" diagnostic virtual text
+ LspDiagnosticsSignInformation = 'paleblue' # Used for "information" diagnostic signs in sign column
+ LspDiagnosticsFloatingInformation = 'paleblue' # Used for "information" diagnostic messages in the diagnostic float
+ LspDiagnosticsVirtualTextInformation = 'paleblue' # Virtual text "information"
+ LspDiagnosticsUnderlineInformation = '- - c paleblue' # Used to underline "information" diagnostic
+ DiagnosticSignInformation = 'paleblue'
+
+ LspDiagnosticsInfo = 'paleblue'
+ LspDiagnosticsDefaultInfo = 'paleblue' # Used for "info" diagnostic virtual text
+ LspDiagnosticsSignInfo = 'paleblue' # Used for "info" diagnostic signs in sign column
+ LspDiagnosticsFloatingInfo = 'paleblue' # Used for "info" diagnostic messages in the diagnostic float 
+ LspDiagnosticsVirtualTextInfo = 'paleblue' # Virtual text "info"
+ LspDiagnosticsUnderlineInfo = '- - c paleblue' # Used to underline "info" diagnostic 
+ DiagnosticInfo = 'paleblue'
+ DiagnosticSignInfo = 'paleblue'
+ DiagnosticFloatingInfo = 'paleblue'
+ DiagnosticVirtualTextInfo = 'paleblue'
+ DiagnosticUnderlineInfo = 'paleblue'
+
+ LspDiagnosticsHint = 'purple'
+ LspDiagnosticsDefaultHint = 'purple' # Used for "hint" diagnostic virtual text
+ LspDiagnosticsSignHint = 'purple' # Used for "hint" diagnostic signs in sign column
+ LspDiagnosticsFloatingHint = 'purple' # Used for "hint" diagnostic messages in the diagnostic float
+ LspDiagnosticsVirtualTextHint = 'purple' # Virtual text "hint"
+ LspDiagnosticsUnderlineHint = '- - c purple' # Used to underline "hint" diagnostic
+ DiagnosticHint = 'purple'
+ DiagnosticSignHint = 'purple'
+ DiagnosticFloatingHint = 'purple'
+ DiagnosticVirtualTextHint = 'purple'
+ DiagnosticUnderlineHint = 'purple'
+
+ DiagnosticOther = 'gray'
+ DiagnosticSignOther = 'gray'
+
+ LspReferenceText = 'accent highlight' # Used for highlight "text" reference
+ LspReferenceRead = 'accent highlight' # Used for highlight "text" reference
+ LspReferenceWrite = 'accent highlight' # Used for highlight "text" reference
+
+[Git]
+ SignAdd = 'green'
+ GitSignsAdd = 'green'
+ GitSignsAddNr = 'green'
+ GitSignsAddLn = 'green'
+
+ SignChange = 'yellow'
+ GitSignsChange = 'yellow'
+ GitSignsChangeNr = 'yellow'
+ GitSignsChangeLn = 'yellow'
+
+ SignDelete = 'red'
+ GitSignsDelete = 'red'
+ GitSignsDeleteNr = 'red'
+ GitSignsDeleteLn = 'red'
+ 
+ GitSignsAddInline = 'green'
+ GitSignsChangeInline = 'yellow'
+ GitSignsDeleteInline = 'red'
+
+[Telescope]
+ TelescopePromptBorder = 'cyan'
+ TelescopeResultsBorder = 'purple'
+ TelescopePreviewBorder = 'green'
+ TelescopeSelectionCaret = 'purple'
+ TelescopeSelection = 'purple'
+ TelescopeMatching = 'cyan'
+ TelescopeNormal = 'fg float'
+
+[Whichkey]
+ WhichKey = 'accent - b'
+ WhichKeyGroup = 'text'
+ WhichKeyDesc = 'blue - i'
+ WhichKeySeperator = 'fg'
+ WhichKeyFloating = '- float'
+ WhichKeyFloat = '- float'
+
+[LspSaga]
+ SagaNormal = 'link:NormalFloat'
+ SagaWinbarModule = 'link:@namespace'
+ SagaWinbarInterface = 'link:@type'
+ SagaWinbarConstructor = 'link:@constructor'
+ SagaWinbarStruct = 'link:@structure'
+ SagaWinbarObject = 'link:@field'
+ SagaWinbarUnit = 'link:@number'
+ SagaWinbarFile = 'fg'
+ SagaWinbarSnippet = 'fg'
+ SagaWinbarText = 'link:@string'
+ SagaWinbarTypeAlias = 'link:@type'
+ SagaWinbarEvent = 'link:@function'
+ SagaWinbarParameter = 'link:@parameter'
+ SagaWinbarKey = 'link:@keyword'
+ SagaWinbarValue = 'fg'
+ SagaWinbarMacro = 'link:Macro'
+ SagaWinbarNumber = 'link:@number'
+ SagaWinbarConstant = 'link:@constant'
+ SagaWinbarFunction = 'link:@function'
+ SagaWinbarEnum = 'link:@type'
+ SagaWinbarField = 'link:@field'
+ SagaWinbarProperty = 'link:@property'
+ SagaWinbarMethod = 'link:@method'
+ SagaWinbarClass = 'link:@type'
+ SagaWinbarFolder = 'link:Directory'
+ SagaWinbarPackage = 'link:Directory'
+ SagaWinbarStaticMethod = 'link:@method'
+ SagaWinbarTypeParameter = 'link:@type'
+ SagaWinbarEnumMember = 'link:@constant'
+ SagaWinbarOperator = 'link:@operator'
+ SagaWinbarNull = 'link:@constant'
+ SagaWinbarNamespace = 'link:@namespace'
+ SagaWinbarArray = 'link:@keyword'
+ SagaWinbarBoolean = 'link:@boolean'
+ SagaWinbarString = 'link:@string'
+ SagaWinbarVariable = 'link:@variable'
+ SagaWinbarFilename = 'fg'
+ SagaWinbarFolderName = 'fg'
+ SagaWinbarFileIcon = 'link:Directory'
+ SagaWinbarSep = 'pink'
+
+[StatusLine]
+ StatusLine = 'fg contrast'
+ StatusLineNC = 'text disabled'
+ StatusLineTerm = 'fg contrast'
+ StatusLineTermNC = 'text disabled'
+
+[BufferLine]
+ BufferLineIndicatorSelected = 'accent'
+ BufferLineFill = '- bg_alt'
+ BufferLineSeparator = 'bg_alt bg_alt'
+ BufferLineSeparatorSelected = 'bg_alt bg'
+ BufferLineBufferSelected = 'yellow - b'
+
+[IndentBlankline]
+ IndentBlanklineChar = 'highlight'
+ IndentBlanklineContextChar = 'disabled'
+ IndentBlanklineContextStart = '- - u'
+ IndentBlanklineSpaceChar = 'cyan'
+ IndentBlanklineSpaceCharBlankline = 'yellow'
+
+[Dashboard]
+ DashboardShortCut = 'blue'
+ DashboardHeader = 'red'
+ DashboardCenter = 'cyan'
+ DashboardFooter = 'green - i'
+
+[Cmp]
+CmpItemAbbrDeprecated = 'comments - s'
+CmpItemAbbrMatch = 'link:IncSearch' 
+CmpItemAbbrMatchFuzzy = 'link:IncSearch' 
+CmpItemKindText = 'link:@string'
+CmpItemKindMethod = 'link:@method'
+CmpItemKindFunction = 'link:@function'
+CmpItemKindConstructor = 'link:@constructor'
+CmpItemKindField = 'link:@field'
+CmpItemKindVariable = 'link:@variable'
+CmpItemKindClass = 'link:@type'
+CmpItemKindInterface = 'link:@type'
+CmpItemKindModule = 'link:@namespace'
+CmpItemKindProperty = 'link:@property'
+CmpItemKindUnit = 'link:@number'
+CmpItemKindValue = 'link:@string'
+CmpItemKindEnum = 'link:@type'
+CmpItemKindKeyword = 'link:@keyword'
+CmpItemKindSnippet = 'link:@keyword'
+CmpItemKindColor = 'orange'
+CmpItemKindFile = 'fg'
+CmpItemKindReference = 'link:@text.reference'
+CmpItemKindFolder = 'link:Directory'
+CmpItemKindEnumMember = 'link:@constant'
+CmpItemKindConstant = 'link:@constant'
+CmpItemKindStruct = 'link:Structure'
+CmpItemKindEvent = 'link:@function'
+CmpItemKindOperator = 'link:@operator'
+CmpItemKindTypeParameter = 'link:@type'
