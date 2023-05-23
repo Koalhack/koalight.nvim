@@ -28,7 +28,7 @@ local colors = {
   error = "#FF5370",
   link = "#80CBC4",
   none = "NONE",
-  float = "link:bg_alt",
+  float = "#1B1E2B",
 }
 
 return colors
