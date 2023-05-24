@@ -225,6 +225,133 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  #TSQueryLinterError = 'yellow'
  #TreesitterContext = '- gray'
 
+ # Misc
+ '@comment' = 'link:Comment'               # line and block comments
+ '@comment.documentation' = 'link:Comment' # comments documenting code
+ '@error' = 'link:Error'                 # syntax/parser errors
+ #'@none' = '-'                 # completely disable the highlight
+ '@preproc' = 'link:PreProc'               # various preprocessor directives & shebangs
+ '@define' = 'link:Define'               # preprocessor definition directives
+ '@operator' = 'link:Operator'             # symbolic operators (e.g. `+` / `*`)
+ 
+ # Punctuation
+ '@punctuation.delimiter' = 'link:Delimiter' # delimiters (e.g. `;` / `.` / `,`)
+ '@punctuation.bracket' = 'cyan'  # brackets (e.g. `()` / `{}` / `[]`)
+ '@punctuation.special' = 'cyan'  # special symbols (e.g. `{}` in string interpolation)
+ 
+ # Literals
+ '@string' = 'link:String'               # string literals
+ '@string.documentation' = 'white' # string documenting code (e.g. Python docstrings)
+ '@string.regex' = 'blue'         # regular expressions
+ '@string.escape' = 'disabled'        # escape sequences
+ '@string.special' = 'green'       # other special strings (e.g. dates)
+ 
+ '@character' = 'link:Character'           # character literals
+ '@character.special' = 'link:SpecialChar'    # special characters (e.g. wildcards)
+ 
+ '@boolean' = 'link:Boolean'              # boolean literals
+ '@number' = 'link:Number'              # numeric literals
+ '@float' = 'link:Float'               # floating-point number literals
+ 
+ # Functions
+ '@function' = 'link:Function'         # function definitions
+ '@function.builtin' = 'cyan - i' # built-in functions
+ '@function.call' = 'link:@function'   # function calls
+ '@function.macro' = 'blue'  # preprocessor macros
+ 
+ '@method' = 'blue - i'           # method definitions
+ '@method.call' = 'link:@method'      # method calls
+ 
+ '@constructor' = 'purple'      # constructor calls and definitions
+ '@parameter' = 'paleblue'       # parameters of a function
+ 
+ # Keywords
+ '@keyword' = 'link:Keyword'             # various keywords
+ '@keyword.coroutine' = 'link:Keyword'  # keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
+ '@keyword.function' = 'link:Keyword'    # keywords that define a function (e.g. `func` in Go, `def` in Python)
+ 
+ '@conditional' = 'link:Conditional'         # keywords related to conditionals (e.g. `if` / `else`)
+ '@conditional.ternary' = 'link:Conditional' # ternary operator (e.g. `?` / `:`)
+ 
+ '@repeat' = 'link:Repeat'              # keywords related to loops (e.g. `for` / `while`)
+ '@debug' = 'link:Debug'               # keywords related to debugging
+ '@label' = 'red'              # GOTO and other labels (e.g. `label:` in C)
+ '@include' = 'cyan'            # keywords for including modules (e.g. `import` / `from` in Python)
+ '@exception'  = 'yellow'          # keywords related to exceptions (e.g. `throw` / `catch`)
+ 
+ # Types
+ '@type' = 'link:Type'           # type or class definitions and annotations
+ '@type.builtin' = 'purple'    # built-in types
+ '@type.definition' = 'link:Type' # type definitions (e.g. `typedef` in C)
+ '@type.qualifier' = 'link:Type' # type qualifiers (e.g. `const`)
+ 
+ '@storageclass' = 'link:StorageClass'    # modifiers that affect storage in memory or life-time
+ '@attribute' = 'yellow'      # attribute annotations (e.g. Python decorators)
+ '@field' = 'gray'           # object and struct fields
+ '@property' = 'paleblue'        # similar to `@field`
+ 
+ # Identifiers
+ '@variable' = 'gray - i'         # various variable names
+ '@variable.builtin' = 'link:@variable' # built-in variable names (e.g. `this`)
+ 
+ '@constant' = 'link:Constant'         # constant identifiers
+ '@constant.builtin' = 'blue' # built-in constant values
+ '@constant.macro' = 'blue'  # constants defined by the preprocessor
+ 
+ '@namespace' = 'yellow'        # modules or namespaces
+ '@symbol' = 'yellow'          # symbols or atoms
+ 
+ # Text
+ '@text' = 'text'                  # non-structured text
+ '@text.strong' = 'blue - b'           # bold text
+ '@text.emphasis' = 'paleblue'        # text with emphasis
+ '@text.underline' = 'fg - u'       # underlined text
+ '@text.strike' = '-'          # strikethrough text
+ '@text.title' = 'paleblue - b'           # text that is part of a title
+ '@text.literal'  = 'fg'         # literal or verbatim text (e.g., inline code)
+ '@text.quote' = 'yellow'           # text quotations
+ '@text.uri' = 'link'             # URIs (e.g. hyperlinks)
+ '@text.math' = 'pink'            # math environments (e.g. `$ ... $` in LaTeX)
+ '@text.reference' = 'yellow'       # text references, footnotes, citations, etc.
+ 
+ '@text.todo' = 'link:Todo'            # todo notes
+ '@text.note' = 'link:Todo'             # info notes
+ '@text.warning' = 'link:Warning'          # warning notes
+ '@text.danger' = 'link:Error'          # danger/error notes
+ 
+ '@text.diff.add' = 'link:DiffAdd'         # added text (for diff files)
+ '@text.diff.delete' = 'link:DiffDelete'      # deleted text (for diff files)
+ 
+ # Tags
+ '@tag' = 'link:Tag'           # XML tag names
+ #'@tag.attribute'= '-' # XML tag attributes
+ '@tag.delimiter' = 'yellow' # XML tag delimiters
+ 
+ # Conceal
+ '@conceal' = 'link:Conceal' # for captures that are only used for concealing
+ 
+ # Spell
+ #'@spell' = ''  # for defining regions to be spellchecked
+ #'@nospell' = '' # for defining regions that should NOT be spellchecked
+ 
+ # Locals
+ #'@definition'            # various definitions
+ #'@definition.constant'   # constants
+ #'@definition.function'   # functions
+ #'@definition.method'     # methods
+ #'@definition.var'        # variables
+ #'@definition.parameter'  # parameters
+ #'@definition.macro'      # preprocessor macros
+ #'@definition.type'       # types or classes
+ #'@definition.field'      # fields or properties
+ #'@definition.enum'       # enumerations
+ #'@definition.namespace'  # modules or namespaces
+ #'@definition.import'     # imported names
+ #'@definition.associated' # the associated type of a variable
+ 
+ #'@scope'                 # scope block
+ #'@reference'             # identifier reference
+
 [Nvim-ts-rainbow2]
 TSRainbowRed = 'red'
 TSRainbowYellow = 'yellow'
