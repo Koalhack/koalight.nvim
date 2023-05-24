@@ -40,6 +40,8 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
 
 
 [highlights]
+
+ #Editor
  Normal = 'fg bg' # Normal text and background color
  SignColumn = 'fg bg'
 
@@ -103,6 +105,11 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  CommandMode = 'gray - r'
  Warnings = 'yellow'
 
+ healthError = 'error'
+ healthSuccess = 'green'
+ healthWarning = 'yellow'
+
+#Syntax
  Type = 'purple' # int, long, char, etc.
  StorageClass = 'cyan' # static, register, volatile, etc.
  Structure = 'purple' # struct, union, enum, etc.
@@ -135,13 +142,13 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  
  Comment = 'comments - i'
 
- Conditional = 'purple - i'
- Keyword = 'purple - i'
- Repeat = 'purple - i'
+ Conditional = 'purple - i' # normal if, then, else, endif, switch, etc.
+ Keyword = 'purple - i' # normal for, do, while, etc.
+ Repeat = 'purple - i' # normal any other keyword
 
- Function = 'blue - i'
+ Function = 'blue - i' # normal function name
 
- Identifier = 'gray - i'
+ Identifier = 'gray - i' # Any variable name
 
  # NormalNC = 'fg bg'
  # FloatBorder = 'gray bg_alt'
@@ -153,10 +160,6 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  # Variable = 'cyan'
  # Bold = '- - b'
  # Italic = '- - i'
-
- healthError = 'error'
- healthSuccess = 'green'
- healthWarning = 'yellow'
 
 [Treesitter]
  TSAnnotation = 'red' # For C++/Dart attributes, annotations, that can be attached to denote some kind of meta information
@@ -221,6 +224,15 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  #TSStrong = 'blue - b'
  #TSQueryLinterError = 'yellow'
  #TreesitterContext = '- gray'
+
+[Nvim-ts-rainbow2]
+TSRainbowRed = 'red'
+TSRainbowYellow = 'yellow'
+TSRainbowBlue = 'blue'
+TSRainbowOrange = 'orange'
+TSRainbowGreen = 'green'
+TSRainbowViolet = 'purple'
+TSRainbowCyan = 'cyan'
 
 [html]
  htmlLink = 'link - u' 
