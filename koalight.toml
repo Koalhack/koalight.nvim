@@ -352,14 +352,23 @@ author = "Alexandre Saner <alexandre.saner@gmail.com>"
  #'@scope'                 # scope block
  #'@reference'             # identifier reference
 
-[Nvim-ts-rainbow2]
-TSRainbowRed = 'red'
-TSRainbowYellow = 'yellow'
-TSRainbowBlue = 'blue'
-TSRainbowOrange = 'orange'
-TSRainbowGreen = 'green'
-TSRainbowViolet = 'purple'
-TSRainbowCyan = 'cyan'
+# [Nvim-ts-rainbow2]
+# TSRainbowRed = 'red'
+# TSRainbowYellow = 'yellow'
+# TSRainbowBlue = 'blue'
+# TSRainbowOrange = 'orange'
+# TSRainbowGreen = 'green'
+# TSRainbowViolet = 'purple'
+# TSRainbowCyan = 'cyan'
+
+[rainbow-delimiters]
+ RainbowDelimiterRed = 'red'
+ RainbowDelimiterYellow = 'yellow'
+ RainbowDelimiterBlue = 'blue'
+ RainbowDelimiterOrange = 'orange'
+ RainbowDelimiterGreen = 'green'
+ RainbowDelimiterViolet = 'purple'
+ RainbowDelimiterCyan = 'cyan'
 
 [html]
  htmlLink = 'link - u' 

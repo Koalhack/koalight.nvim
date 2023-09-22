@@ -230,14 +230,14 @@ theme.set_highlights = function()
   hl(0, "@tag.delimiter", { fg = c.yellow, bg = 'NONE' })
   hl(0, "@conceal", { link = 'Conceal' })
 
-  -- Nvim-ts-rainbow2
-  hl(0, "TSRainbowRed", { fg = c.red, bg = 'NONE' })
-  hl(0, "TSRainbowYellow", { fg = c.yellow, bg = 'NONE' })
-  hl(0, "TSRainbowBlue", { fg = c.blue, bg = 'NONE' })
-  hl(0, "TSRainbowOrange", { fg = c.orange, bg = 'NONE' })
-  hl(0, "TSRainbowGreen", { fg = c.green, bg = 'NONE' })
-  hl(0, "TSRainbowViolet", { fg = c.purple, bg = 'NONE' })
-  hl(0, "TSRainbowCyan", { fg = c.cyan, bg = 'NONE' })
+  -- rainbow-delimiters
+  hl(0, "RainbowDelimiterRed", { fg = c.red, bg = 'NONE' })
+  hl(0, "RainbowDelimiterYellow", { fg = c.yellow, bg = 'NONE' })
+  hl(0, "RainbowDelimiterBlue", { fg = c.blue, bg = 'NONE' })
+  hl(0, "RainbowDelimiterOrange", { fg = c.orange, bg = 'NONE' })
+  hl(0, "RainbowDelimiterGreen", { fg = c.green, bg = 'NONE' })
+  hl(0, "RainbowDelimiterViolet", { fg = c.purple, bg = 'NONE' })
+  hl(0, "RainbowDelimiterCyan", { fg = c.cyan, bg = 'NONE' })
 
   -- html
   hl(0, "htmlLink", { fg = c.link, bg = 'NONE', underline=true, })
